@@ -2,7 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Book Search</title>
+    <title>Video Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <script
   src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -12,30 +16,36 @@
   <body>
 
     <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Book Search-er</a>
+      <div class="nav-wrapper blue">
+        <center><a href="#" class="brand-logo" style="margin-right:50px">Supercool Videos</a></center>
+        <i class="w3-spin fa fa-male" style="margin-left:50px"></i>
+
       </div>
     </nav>
+
 
     <div class='container'>
       <div class='row'>
         <div class='col s4'>
-          <h2>Find a Book</h2>
-
-          <form id="book-search">
-            <input id='query' type='text' />
-            <input type='submit' />
+          <h3>Check Out Some Cool Videos!</h3>
+          <p><i class="w3-spin fa fa-home"></i></p>
+          <form id="video-search">
+            <input id='query' type='text' autofocus/>
+            <button class="progress waves-blue btn-flat blue" type="submit" name="action">
+            <div class="indeterminate red"></div>Enter</button>
           </form>
         </div>
 
+
         <div class='col s8'>
-          <ul id="books">
+          <ul id="results">
           </ul>
         </div>
       </div>
     </div>
 
-      <script type="text/javascript" src='src/adapters/googleBooks.js'></script>
+      <script type="text/javascript" src='src/adapters/api_key.js'></script>
+      <script type="text/javascript" src='src/adapters/YoutubeVideoInfo.js'></script>
       <script type="text/javascript" src='index.js'></script>
   </body>
 </html>
