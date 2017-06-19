@@ -1,7 +1,7 @@
 $(document).ready(function(){
   console.log('Document ready!')
 
-  // Selects Different HTML Elements
+  /// Selects Different HTML Elements
   const $input = $('input#query')
   const $videoList = $('ul#results')
   const $form = $('form#video-search')
